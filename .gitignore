@@ -1,0 +1,4 @@
+node_modules
+platforms
+test-results.xml
+e2e/reports
