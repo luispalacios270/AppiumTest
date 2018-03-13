@@ -1,0 +1,20 @@
+<ActionBar title="My App" class="action-bar">
+</ActionBar>
+
+<GridLayout rows="*,*,*">
+    <Button automationText="btnToClickVanish" *ngIf="shouldShowElement" text="CLICK ME To vanish!!" (tap)="shouldShowElement=false "
+        class="btn-click">
+    </Button>
+    <Button row="1" automationText="btnToClick" text="CLICK ME!!" (tap)="textToChange = textToChange + '5' " class="btn-click">
+    </Button>
+    <Label row="2" style="border-width:1; border-color:red" automationText="labelToShow" class="labelToChange" [text]="textToChange"></Label>
+</GridLayout>
+
+
+<!-- <StackLayout class="page">
+    <ListView [items]="items" class="list-group">
+        <ng-template let-item="item">
+            <Label [nsRouterLink]="['/item', item.id]" [text]="item.name" class="list-group-item"></Label>
+        </ng-template>
+    </ListView>
+</StackLayout> -->
