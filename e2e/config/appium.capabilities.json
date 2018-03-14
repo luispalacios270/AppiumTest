@@ -50,7 +50,7 @@
   "android25": {
     "platformName": "Android",
     "platformVersion": "7.1",
-    "deviceName": "Emulator-Api25-Google",
+    "deviceName": "Pixel_API_25",
     "avd": "Pixel_API_25",
     "lt": 60000,
     "appActivity": "com.tns.NativeScriptActivity",

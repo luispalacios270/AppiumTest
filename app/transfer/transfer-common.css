@@ -1,0 +1,12 @@
+StackLayout {
+  padding: 8 20 20 20;
+}
+
+.Success {
+  height: 100;
+  background-color: blueviolet;
+  text-align: center;
+  padding-top: 40;
+  color: white;
+  font-weight: bold;
+}

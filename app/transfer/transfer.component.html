@@ -1,0 +1,19 @@
+<StackLayout>
+    <Label text="Congratulations" automationText="success" [visibility]="showSucces?'':'collapse'" class="Success"></Label>
+
+    <StackLayout automationText="formForSubmit" [formGroup]="form">
+
+
+
+        <Label text="Monto"></Label>
+        <TextField automationText="input" formControlName="amount"></TextField>
+        <Label text="Descripción"></Label>
+        <TextField automationText="input" formControlName="description"></TextField>
+        <Label text="Cuenta Origen"></Label>
+        <TextField automationText="input" formControlName="origin"></TextField>
+        <Label text="Cuenta Destino"></Label>
+        <TextField automationText="input" formControlName="destination"></TextField>
+
+        <Button class="btn btn-primary" automationText="btnToSubmit" [isEnabled]="form.valid" (tap)="showSucces=true" text="CLick Me!!"></Button>
+    </StackLayout>
+</StackLayout>
